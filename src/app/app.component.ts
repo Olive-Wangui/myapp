@@ -8,7 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Angular vibes';
 
+  jsonValue = {
+    a: 'hello',
+    b: 'world'
+  }
+
+  newDate = new Date();
+
   handleEvent(){
-    console.log('Button Clicked!');
+    console.log('Button Clicked!',this.title);
   }
 }

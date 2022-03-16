@@ -7,6 +7,10 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<h1>{{title}}</h1>
+<h1>{{title | uppercase}}</h1>  <!-- | - that is the pipes symbol-->
+<h1>{{jsonValue | json}}</h1>
+<h1>{{newDate | date:'medium'}}</h1>   <!-- creation of date --> 
 <button (click)="handleEvent()">Click Me</button>
+<!-- <input placeholder="hello" [(ngModel)]="title" /> two-way binding -->
+<input placeholder="hello" [ngModel]="title" />
 <!-- <router-outlet></router-outlet> -->
